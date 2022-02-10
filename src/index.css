@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: rgb(45, 78, 110);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navlogo{
+  font-weight: 600;
+}
+
+.feature{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.feature h2{
+  border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+.custom-form{
+  border-radius: 8px;
+}
+
+.navitems{
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+.headercard{
+  font-weight: 600;
+}
+
+.carousel{
+  position: relative;
+}
+
+.blackbox {
+ position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  left: 44%;
+  top: 135px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blackbox {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  left: 33%;
+  top: 180px;
+}
+}
+
+
