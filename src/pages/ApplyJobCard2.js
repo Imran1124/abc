@@ -45,7 +45,7 @@ const ApplyJobCard2 = () => {
                 />
 
                 <div className="my-5" style={{ display: 'flex', justifyContent: 'center' }}>
-                    <MDBBtn rounded outline>
+                    <MDBBtn rounded outline onClick={() => alert('Access Denied')}>
                         <MDBIcon icon='credit-card' /> Pay now</MDBBtn>
                 </div>
             </HeadingCard>

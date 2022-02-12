@@ -5,10 +5,8 @@ import HeadingCard from './HeadingCard';
 
 
 const options = [
-
-    { label: "Urdu", value: "urdu" },
     { label: "English", value: "English" },
-    { label: "Hindi", value: "hindi" },
+    { label: "Hindi", value: "hindi" }
 ];
 // const styles = StylesConfig({
 //     outerHeight: 10

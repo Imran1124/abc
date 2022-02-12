@@ -5,9 +5,8 @@ import HeadingCard from '../Components/HeadingCard';
 import PersonalDetail from '../Components/PersonalDetail';
 import TechnicalEducation from '../Components/TechnicalEducation';
 import AddressDetail from '../Components/AddressDetail';
-import Education1 from '../Components/Education1';
+import Education2 from '../Components/Education2';
 import Experience from '../Components/Experience';
-import Education from '../Components/Education';
 import Skills from '../Components/Skills';
 
 const ApplyJobCard = () => {
@@ -24,7 +23,7 @@ const ApplyJobCard = () => {
                     field={field}
                     setField={setField}
                 />
-                <Education
+                <Education2
                     addField={addField}
                     setAddField={setAddField}
                     field={field}
@@ -39,13 +38,15 @@ const ApplyJobCard = () => {
                     field={field}
                     setField={setField}
                 />
+
                 <Experience
                     field={field}
                     setField={setField}
                 />
+
                 <div className="my-5" style={{ display: 'flex', justifyContent: 'center' }}>
-                    <MDBBtn rounded outline onClick={() => alert('Access Denied')}>
-                        <MDBIcon icon='credit-card' /> Pay now</MDBBtn>
+                    <MDBBtn rounded outline>
+                        <MDBIcon icon='credit-card' onClick={() => alert('Access Denied')} /> Pay now</MDBBtn>
                 </div>
             </HeadingCard>
             <div style={{ marginTop: 50 }} />
