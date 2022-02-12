@@ -27,7 +27,7 @@ const PersonalDetail = (props) => {
     return (
         <div>
             <div className="container">
-                <span>Personal Detail</span>
+                <span style={{ fontWeight: 'bold' }}>Personal Detail</span>
                 <hr />
                 <div className="row">
                     <div className="col-md-4 col-sm-12 my-2">

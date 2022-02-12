@@ -42,7 +42,11 @@ export default function GallerySection() {
 
 
                 <div className="carousel-wrapper">
-                    <Carousel breakPoints={breakPoints} enableAutoPlay={true} showArrows={false}>
+                    <Carousel breakPoints={breakPoints}
+                        autoPlaySpeed={4000}
+                        enableAutoPlay={true}
+                        showArrows={false}
+                    >
                         {items.map((item, i) => (
                             <Item key={i}>
                                 <img width='100%' height='100%' src={item} alt="" />

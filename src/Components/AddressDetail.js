@@ -56,11 +56,11 @@ const AddressDetail = (props) => {
     return (
         <div>
             <div className="container">
-                <span>Address Detail</span>
+                <span style={{ fontWeight: 'bold' }}>Address Detail</span>
                 <hr />
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
-                        <span>Corespondence Address</span>
+                        <span style={{ fontWeight: 'bold' }}>Corespondence Address</span>
                         <hr />
                         <div className="row">
                             <div className="col-md-6 my-2">
@@ -142,7 +142,7 @@ const AddressDetail = (props) => {
                     {/* parmanent address */}
                     <div className="col-md-6 col-sm-12">
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <span>Permanent Address</span>
+                            <span style={{ fontWeight: 'bold' }}>Permanent Address</span>
                             <MDBCheckbox
                                 className='chkbox'
                                 name='flexCheck'

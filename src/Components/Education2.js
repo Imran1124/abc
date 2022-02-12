@@ -24,7 +24,7 @@ const Education1 = (props) => {
         <div>
             <div className="container my-5">
                 <div style={{ justifyContent: 'space-between', display: 'flex' }}>
-                    <span>Education</span>
+                    <span style={{ fontWeight: 'bold' }}>Education</span>
                     <MDBBtn className='btn-rounded' outline onClick={adddata}
                         hidden={props.addField.length ? true : false}
                     >
@@ -103,7 +103,6 @@ const Education1 = (props) => {
                                 <div className='my-3' />
                             </div>
                         ))}
-                        {props.addField.length > 3 ? <span>If any technical </span> : ''}
                     </div>
                     <div style={{ justifyContent: 'right', display: 'flex' }}
                         hidden={!props.addField.length ? true : false}>

@@ -24,7 +24,7 @@ const Education1 = (props) => {
         <div>
             <div className="container my-5">
                 <div style={{ justifyContent: 'space-between', display: 'flex' }}>
-                    <span>Education</span>
+                    <span style={{ fontWeight: 'bold' }}>Education</span>
                     <MDBBtn className='btn-rounded' onClick={adddata}>
                         <MDBIcon icon='plus' fas />
                     </MDBBtn>

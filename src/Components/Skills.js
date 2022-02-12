@@ -24,7 +24,7 @@ const Skills = (props) => {
         <div>
             <div className="container my-5">
                 <div style={{ justifyContent: 'space-between', display: 'flex' }}>
-                    <span>Skills</span>
+                    <span style={{ fontWeight: 'bold' }}>Skills</span>
                     <MDBBtn className='btn-rounded' outline onClick={adddata1}
                         hidden={skill.length ? true : false}
                     >

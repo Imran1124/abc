@@ -12,7 +12,7 @@ const Experience = (props) => {
         <div>
             <div className="container" style={{ marginTop: 100 }}>
                 <div>
-                    <span>Experience</span>
+                    <span style={{ fontWeight: 'bold' }}>Experience</span>
                     <hr />
                 </div>
                 <div className="row">
