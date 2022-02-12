@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     MDBContainer,
     MDBNavbar,
@@ -11,6 +12,7 @@ import {
     MDBIcon,
     MDBBtn
 } from 'mdb-react-ui-kit';
+import logo from '../assets/images/logo.jpg'
 
 export default function NavBar() {
     const [showNav, setShowNav] = useState(false);
@@ -18,7 +20,9 @@ export default function NavBar() {
     return (
         <MDBNavbar expand='lg' light bgColor='light' className='fixed-top'>
             <MDBContainer>
-                <MDBNavbarBrand href='/' className='navlogo'>ABC</MDBNavbarBrand>
+                <MDBNavbarBrand href='/' className='navlogo'>
+                    <img src={logo} height={40} alt="#" />
+                </MDBNavbarBrand>
                 <MDBNavbarToggler
                     type='button'
                     aria-expanded='false'
@@ -30,19 +34,19 @@ export default function NavBar() {
                 <MDBCollapse navbar show={showNav}>
                     <MDBNavbarNav className='navitems'>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current='page' href='#'>
-                                Home
+                            <MDBNavbarLink active aria-current='page'>
+                                <Link to='/'>Home</Link>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>About</MDBNavbarLink>
+                            <Link to='/applycard1'> <MDBNavbarLink>About</MDBNavbarLink></Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Contact</MDBNavbarLink>
+                            <Link to='/applycard2'><MDBNavbarLink>Contact</MDBNavbarLink></Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
                             <MDBNavbarLink>
-                                <MDBBtn color='primary'>Login</MDBBtn>
+                                <Link to='/login'><MDBBtn outline size='sm' color='danger'>Login</MDBBtn></Link>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                     </MDBNavbarNav>

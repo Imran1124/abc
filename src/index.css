@@ -4,6 +4,7 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
 }
 
 code {
@@ -48,6 +49,47 @@ code {
   left: 44%;
   top: 135px;
 }
+
+input{
+  border: none;
+  width: 140px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.applycard{
+  position: relative;
+}
+
+.cardbtn {
+ position: absolute;
+  z-index: 1; /* gray box will be above both green and black box */
+  left: 0%;
+  top: 0px;
+}
+.cardimg{
+  height:190px ;
+}
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 0px violet;
+}
+
 
 @media only screen and (max-width: 600px) {
   .blackbox {

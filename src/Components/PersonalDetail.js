@@ -1,20 +1,26 @@
-import React, { useState } from 'react'
-import { MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
+import React, { useEffect, useState } from 'react'
+import { MDBInput, MDBCheckbox, MDBRadio } from 'mdb-react-ui-kit';
+import Multiselect from "react-select";
 import HeadingCard from './HeadingCard';
 
+
+const options = [
+
+    { label: "Urdu", value: "urdu" },
+    { label: "English", value: "English" },
+    { label: "Hindi", value: "hindi" },
+];
+// const styles = StylesConfig({
+//     outerHeight: 10
+// })
+
 const PersonalDetail = (props) => {
-    const [checked, setChecked] = useState(false)
 
-    const handleCheck = (e) => {
-        if (checked === true) {
-            setChecked(false)
-            props.setField({ ...props.field, paddress: '' })
-        } else {
-            setChecked(true)
-            props.setField({ ...props.field, paddress: props.field.caddress })
-        }
+    // return setVal({ ...getVal, language: [...getVal.language, e.value] })
+    const handleSelect = (e) => {
+        props.setField({ ...props.field, language: e.map(eve => eve.value) })
+
     }
-
     const handleChange = (e) => {
         props.setField({ ...props.field, [e.target.name]: e.target.value })
     }
@@ -24,17 +30,6 @@ const PersonalDetail = (props) => {
                 <span>Personal Detail</span>
                 <hr />
                 <div className="row">
-                    <div className="col-md-4 col-sm-12 my-2">
-                        <MDBInput
-                            className='custom-form'
-                            label='Mobile no'
-                            id='mobileno'
-                            type='number'
-                            name="mobileno"
-                            value={props.field.mobileno || ''}
-                            onChange={handleChange}
-                            size='lg' />
-                    </div>
                     <div className="col-md-4 col-sm-12 my-2">
                         <MDBInput
                             label='Name'
@@ -48,6 +43,31 @@ const PersonalDetail = (props) => {
                     </div>
                     <div className="col-md-4 col-sm-12 my-2">
                         <MDBInput
+                            className='custom-form'
+                            label='Email'
+                            id='email'
+                            type='email'
+                            name="email"
+                            value={props.field.email || ''}
+                            onChange={handleChange}
+                            size='lg' />
+                    </div>
+                    <div className="col-md-4 col-sm-12 my-2">
+                        <MDBInput
+                            className='custom-form'
+                            label='Mobile no'
+                            id='mobileno'
+                            type='number'
+                            name="mobileno"
+                            value={props.field.mobileno || ''}
+                            onChange={handleChange}
+                            size='lg' />
+                    </div>
+                </div>
+
+                <div className="row my-2">
+                    <div className="col-md-4 col-sm-12 my-2">
+                        <MDBInput
                             label='Date of birth'
                             id='dateofbirth'
                             type='date'
@@ -55,10 +75,8 @@ const PersonalDetail = (props) => {
                             value={props.field.dateofbirth || ''}
                             onChange={handleChange}
                             size='lg' />
-                    </div>
-                </div>
 
-                <div className="row my-2">
+                    </div>
                     <div className="col-md-4 col-sm-12 my-2">
                         <MDBInput
                             label='Father Name'
@@ -70,33 +88,58 @@ const PersonalDetail = (props) => {
                             size='lg' />
                     </div>
                     <div className="col-md-4 col-sm-12 my-2">
-                        <MDBInput
-                            label='Correspondence Address'
-                            id='textAreaExample'
-                            textarea rows={1}
-                            name="caddress"
-                            value={props.field.caddress || ''}
-                            onChange={handleChange}
-                            size='lg' />
-                    </div>
-                    <div className="col-md-4 col-sm-12 my-2">
-                        <MDBInput
-                            label='Permanent Address'
-                            id='textAreaExample'
-                            textarea rows={1}
-                            name="paddress"
-                            value={props.field.paddress || ''}
-                            onChange={handleChange}
-                            size='lg'
-                            disabled={checked} />
-                        <MDBCheckbox
-                            name='flexCheck'
-                            value=''
-                            id='flexCheckDefault'
-                            label='same as correspondence address'
-                            onChange={handleCheck}
-                            checked={checked}
+                        <Multiselect
+                            options={options}
+                            isMulti
+                            onChange={handleSelect}
+                            placeholder='select Language'
                         />
+                    </div>
+                    <div className="row my-2">
+                        <div className="col-md-4 my-3">
+                            <div style={{ display: 'flex', justifyContent: 'flex-start', marginLeft: 5 }}>
+                                <MDBRadio
+                                    name='gender'
+                                    id='male'
+                                    label='Male'
+                                    value="male"
+                                    checked={props.field.gender === "male"}
+                                    onChange={handleChange}
+                                />
+                                <MDBRadio
+                                    className='mx-2'
+                                    name='gender'
+                                    id='female'
+                                    label='Female'
+                                    value="female"
+                                    checked={props.field.gender === "female"}
+                                    onChange={handleChange}
+                                />
+                            </div>
+                        </div>
+                        {/* meriatal status */}
+                        <div className="col-md-6 my-3">
+                            <div style={{ display: 'flex', justifyContent: 'flex-start', marginLeft: 5 }}>
+                                <MDBRadio
+                                    name='mariatalstatus'
+                                    id='married'
+                                    label='Married'
+                                    value="marriaged"
+                                    checked={props.field.mariatalstatus === "marriaged"}
+                                    onChange={handleChange}
+                                />
+                                <MDBRadio
+                                    className='mx-2'
+                                    name='mariatalstatus'
+                                    id='unmarriaged'
+                                    label='Single'
+                                    value="unmarriaged"
+                                    checked={props.field.mariatalstatus === "unmarriaged"}
+                                    onChange={handleChange}
+                                />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
