@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkabc_client=self.webpackChunkabc_client||[]).push([[562],{9562:function(n,c,e){e.r(c);e(2791);var t=e(3329);c.default=function(){return(0,t.jsx)("div",{className:"container",style:{marginTop:480},children:(0,t.jsx)("h1",{children:"Contact"})})}}}]);
-//# sourceMappingURL=562.77cf6490.chunk.js.map
