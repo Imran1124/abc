@@ -15,11 +15,11 @@ const ApplyJobCard = () => {
     return (
         <div className="container" style={{ marginTop: 80 }}>
             <HeadingCard title="Apply for card">
-                <PersonalDetail
+                {/* <PersonalDetail
                     field={field}
                     setField={setField}
-                />
-                <AddressDetail
+                /> */}
+                {/* <AddressDetail
                     field={field}
                     setField={setField}
                 />
@@ -27,7 +27,7 @@ const ApplyJobCard = () => {
                     addField={addField}
                     setAddField={setAddField}
                     field={field}
-                    setField={setField} />
+                    setField={setField} /> */}
                 {/* <TechnicalEducation
                     addField={addField}
                     setAddField={setAddField}
@@ -39,10 +39,10 @@ const ApplyJobCard = () => {
                     setField={setField}
                 />
 
-                <Experience
+                {/* <Experience
                     field={field}
                     setField={setField}
-                />
+                /> */}
 
                 <div className="my-5" style={{ display: 'flex', justifyContent: 'center' }}>
                     <MDBBtn rounded outline onClick={() => alert('Access Denied')} >
