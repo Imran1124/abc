@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 export default function Carousel() {
   const click = () => {
-    var element = document.getElementById("cp");
+    const element = document.getElementById("cp");
     element.className.remove("carousel-caption d-none d-md-block");
     alert(element.className)
   }

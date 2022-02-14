@@ -14,7 +14,6 @@ const EducationalQualification = (props) => {
         addEducationAction(state);
     }
     return (
-
         <div className='my-5'>
             <div className="container">
                 <div style={{ justifyContent: 'space-between', display: 'flex' }}>

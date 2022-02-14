@@ -1,13 +1,6 @@
-import React, { lazy, Suspense } from 'react';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import React, { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import NavBar from './Components/NavBar';
-// import Footer from './Components/Footer';
-// import LandingPage from './pages/LandingPage';
-// import ApplyJobCard from './pages/ApplyJobCard';
-// import ApplyJobCard1 from './pages/ApplyJobCard1';
-// import About from './pages/About';
-// import Contact from './pages/Contact';
-// import ApplyJobCard2 from './pages/ApplyJobCard2';
 
 const NavBar = lazy(() => import('./Components/NavBar'))
 const Footer = lazy(() => import('./Components/Footer'))
@@ -20,7 +13,7 @@ const ApplyJobCard2 = lazy(() => import('./pages/ApplyJobCard2'))
 
 function App() {
   return (
-    <Suspense fallback={<span>Loading</span>}>
+    <>
       <NavBar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
@@ -31,7 +24,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
-    </Suspense>
+    </>
   );
 }
 

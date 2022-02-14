@@ -1,12 +1,6 @@
 import React from 'react';
 import {
-    MDBFooter,
-    MDBContainer,
-    MDBIcon,
-    MDBInput,
-    MDBCol,
-    MDBRow,
-    MDBBtn
+    MDBFooter
 } from 'mdb-react-ui-kit';
 
 export default function Footer() {

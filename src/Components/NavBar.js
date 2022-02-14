@@ -20,9 +20,11 @@ export default function NavBar() {
     return (
         <MDBNavbar expand='lg' light bgColor='light' className='fixed-top'>
             <MDBContainer>
-                <MDBNavbarBrand href='/' className='navlogo'>
+                {/* <MDBNavbarBrand className='navlogo' href="#x"> */}
+                <Link to="/">
                     <img src={logo} height={40} alt="#" />
-                </MDBNavbarBrand>
+                </Link>
+                {/* </MDBNavbarBrand> */}
                 <MDBNavbarToggler
                     type='button'
                     aria-expanded='false'
@@ -33,21 +35,21 @@ export default function NavBar() {
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNav}>
                     <MDBNavbarNav className='navitems'>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current='page'>
-                                <Link to='/'>Home</Link>
-                            </MDBNavbarLink>
+                        <MDBNavbarItem active aria-current='page'>
+                            <Link to='/' className="nav-link active">Home</Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <Link to='/applycard1'> <MDBNavbarLink>About</MDBNavbarLink></Link>
+                            <Link to='/applycard1' className="nav-link">About</Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <Link to='/applycard2'><MDBNavbarLink>Contact</MDBNavbarLink></Link>
+                            <Link className="nav-link" to="/applycard2">
+                                Contact
+                            </Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink>
-                                <Link to='/login'><MDBBtn outline size='sm' color='danger'>Login</MDBBtn></Link>
-                            </MDBNavbarLink>
+                            <Link to='/login' className="nav-link">
+                                <MDBBtn outline size='sm' color='danger'>Login</MDBBtn>
+                            </Link>
                         </MDBNavbarItem>
                     </MDBNavbarNav>
                 </MDBCollapse>

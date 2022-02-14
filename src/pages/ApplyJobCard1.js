@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
-import EducationalQualification from '../Components/EducationalQualification';
 import HeadingCard from '../Components/HeadingCard';
 import PersonalDetail from '../Components/PersonalDetail';
-import TechnicalEducation from '../Components/TechnicalEducation';
 import AddressDetail from '../Components/AddressDetail';
-import Education1 from '../Components/Education1';
 import Experience from '../Components/Experience';
 import Education from '../Components/Education';
 import Skills from '../Components/Skills';

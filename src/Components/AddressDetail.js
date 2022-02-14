@@ -66,21 +66,21 @@ const AddressDetail = (props) => {
                             <div className="col-md-6 my-2">
                                 <select name="cstate" className='form-select form-select-lg'
                                     onChange={changeCity} required >
-                                    <option>Select State</option>
+                                    <option value="">Select State</option>
                                     {cstates.map((e, i) => (
-                                        <option value={e.isoCode}>{e.name}</option>
+                                        <option key={i} value={e.isoCode}>{e.name}</option>
                                     ))}
                                 </select>
                             </div>
                             <div className="col-md-6 my-2">
                                 <select
+                                    className='form-select form-select-lg'
                                     name="ccity"
                                     onChange={(e) => props.setField({ ...props.field, ccity: e.target.value })}
-                                    className='form-select form-select-lg'
                                 >
-                                    <option>Select City</option>
+                                    <option value="">Select City</option>
                                     {ccity.map((e, i) => (
-                                        <option value={e.name}>{e.name}</option>
+                                        <option key={i} value={e.name}>{e.name}</option>
                                     ))}
                                 </select>
                             </div>
@@ -158,13 +158,11 @@ const AddressDetail = (props) => {
                         <div className="row">
                             <div className="col-md-6 my-2">
                                 <select className='form-select form-select-lg'
+                                    value={props.field.pstate}
                                     onChange={pchangeCity} >
-                                    <option>Select State</option>
+                                    <option value="">Select State</option>
                                     {pstates.map((e, i) => (
-                                        <option
-                                            value={e.isoCode}
-                                            selected={e.isoCode == props.field.pstate ? 'selected' : ''}
-                                        >
+                                        <option key={i} value={e.isoCode}>
                                             {e.name}
                                         </option>
                                     ))}
@@ -174,12 +172,13 @@ const AddressDetail = (props) => {
                                 <select
                                     onChange={(e) => props.setField({ ...props.field, pcity: e.target.value })}
                                     className='form-select form-select-lg'
+                                    value={props.field.pcity}
                                 >
-                                    <option>Select City</option>
+                                    <option value="DEFAULT">Select City</option>
                                     {pcity.map((e, i) => (
-                                        <option
-                                            selected={e.name == props.field.pcity ? 'selected' : ''}
-                                            value={e.name}>{e.name}</option>
+                                        <option key={i} value={e.name}>
+                                            {e.name}
+                                        </option>
                                     ))}
                                 </select>
                             </div>

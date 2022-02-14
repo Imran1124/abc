@@ -1,7 +1,7 @@
 {
-  "name": "mdb-react-template",
+  "name": "abc-client",
   "version": "2.3.0",
-  "description": "template for mdb-react-ui-kit",
+  "description": "abc-client",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
