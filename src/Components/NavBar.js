@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import {
     MDBContainer,
     MDBNavbar,
-    MDBNavbarBrand,
     MDBNavbarToggler,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBNavbarLink,
     MDBCollapse,
     MDBIcon,
     MDBBtn

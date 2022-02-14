@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Country, State, City } from 'country-state-city';
+import { State, City } from 'country-state-city';
 import { dispatch } from '../app/store';
 
 const initialState = {

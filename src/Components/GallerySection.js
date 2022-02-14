@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { MDBContainer } from "mdb-react-ui-kit";
 import l1 from '../assets/images/l1.jpg'
 import l2 from '../assets/images/l2.jpg'
 import l3 from '../assets/images/l3.jpg'
@@ -30,7 +29,7 @@ const breakPoints = [
 ];
 
 export default function GallerySection() {
-    const [items, setItems] = useState([l1, l2, l3, l4, it1]);
+    const [items] = useState([l1, l2, l3, l4, it1]);
 
     return (
         <div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { MDBInput, MDBBtn, MDBRadio, MDBIcon } from 'mdb-react-ui-kit';
-import HeadingCard from './HeadingCard';
+import { MDBInput, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 const Skills = (props) => {
     const [skill, setSkill] = useState([])

@@ -1,6 +1,5 @@
 import React from 'react'
-import { MDBInput, MDBBtn, MDBRadio, MDBIcon } from 'mdb-react-ui-kit';
-import HeadingCard from './HeadingCard';
+import { MDBInput, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 const Education1 = (props) => {
 
@@ -55,7 +54,6 @@ const Education1 = (props) => {
                                     <MDBInput
                                         size='lg'
                                         label='Board'
-                                        label='Board'
                                         id='tboard'
                                         type='text'
                                         name="tboard"
@@ -65,7 +63,6 @@ const Education1 = (props) => {
                                 <div className="col-md-2 col-12 my-2">
                                     <MDBInput
                                         size='lg'
-                                        label='Institute'
                                         label='Institute'
                                         id='tinstiture'
                                         type='text'
@@ -77,7 +74,6 @@ const Education1 = (props) => {
                                     <MDBInput
                                         size='lg'
                                         label='Percentage'
-                                        label='Percentage'
                                         id='tpercentage'
                                         type='text'
                                         name="tpercentage"
@@ -87,7 +83,6 @@ const Education1 = (props) => {
                                 <div className="col-md-3 col-9 my-2">
                                     <MDBInput
                                         size='lg'
-                                        label='Year'
                                         label='Year'
                                         id='tyear'
                                         type='text'

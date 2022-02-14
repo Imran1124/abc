@@ -1,6 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardImage, MDBContainer, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
-import Cards from './Cards';
+import { MDBCard, MDBCardImage, MDBContainer, MDBBtn } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 import CardImg from '../assets/images/cardsimg.jpg'
 import job from '../assets/images/job.jpg';

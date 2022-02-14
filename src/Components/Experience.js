@@ -1,6 +1,5 @@
 import React from 'react'
-import { MDBInput, MDBBtn, MDBRadio, MDBIcon } from 'mdb-react-ui-kit';
-import HeadingCard from './HeadingCard';
+import { MDBInput, MDBRadio } from 'mdb-react-ui-kit';
 
 const Experience = (props) => {
 

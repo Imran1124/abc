@@ -1,6 +1,5 @@
 import React from 'react'
-import { MDBInput, MDBBtn, MDBRadio, MDBIcon } from 'mdb-react-ui-kit';
-import HeadingCard from './HeadingCard';
+import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 const Education1 = (props) => {
 

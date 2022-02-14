@@ -5,16 +5,10 @@ import {
   MDBCarouselItem,
   MDBCarouselElement,
   MDBCarouselCaption,
-  MDBBtn
 } from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom'
 
 export default function Carousel() {
-  const click = () => {
-    const element = document.getElementById("cp");
-    element.className.remove("carousel-caption d-none d-md-block");
-    alert(element.className)
-  }
+
   return (
     <>
       <MDBCarousel showIndicators showControls fade className='carousel'>

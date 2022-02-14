@@ -9,7 +9,7 @@ export default function Footer() {
             <MDBFooter className='text-center' color='white' bgColor='dark'>
                 <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                     © 2022 Copyright:
-                    &nbsp;<a className='text-white' href='#'>
+                    &nbsp;<a className='text-white' href='/'>
                         ABC Consultant Pvt. Ltd
                     </a>
                 </div>

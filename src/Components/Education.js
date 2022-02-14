@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { MDBInput, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
-import HeadingCard from './HeadingCard';
+// import HeadingCard from './HeadingCard';
 import { useSelector } from 'react-redux';
 import { addEducationAction, RemoveAction } from '../redux/slicers';
 

@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { MDBInput, MDBCheckbox, MDBRadio } from 'mdb-react-ui-kit';
+import React from 'react'
+import { MDBInput, MDBRadio } from 'mdb-react-ui-kit';
 import Multiselect from "react-select";
-import HeadingCard from './HeadingCard';
 
 
 const options = [
     { label: "English", value: "English" },
     { label: "Hindi", value: "hindi" }
 ];
-// const styles = StylesConfig({
-//     outerHeight: 10
-// })
 
 const PersonalDetail = (props) => {
 
