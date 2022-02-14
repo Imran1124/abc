@@ -1,2 +1,0 @@
-(this["webpackJsonpmdb-react-template"]=this["webpackJsonpmdb-react-template"]||[]).push([[12],{101:function(t,e,c){"use strict";c.r(e);c(0);var a=c(2);e.default=function(){return Object(a.jsx)("div",{className:"container",style:{marginTop:480},children:Object(a.jsx)("h1",{children:"About"})})}}}]);
-//# sourceMappingURL=12.b700a058.chunk.js.map
