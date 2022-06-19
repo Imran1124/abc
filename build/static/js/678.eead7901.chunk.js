@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkabc_client=self.webpackChunkabc_client||[]).push([[678],{5678:function(e,t,c){c.r(t),c.d(t,{default:function(){return s}});c(2791);var n=c(3998),r=c(3329);function s(){return(0,r.jsx)("div",{children:(0,r.jsx)(n.XO,{className:"text-center",color:"white",bgColor:"dark",children:(0,r.jsxs)("div",{className:"text-center p-3",style:{backgroundColor:"rgba(0, 0, 0, 0.2)"},children:["\xa9 2022 Copyright: \xa0",(0,r.jsx)("a",{className:"text-white",href:"/",children:"ABC Consultant Pvt. Ltd"})]})})})}}}]);
+//# sourceMappingURL=678.eead7901.chunk.js.map
